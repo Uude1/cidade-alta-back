@@ -21,12 +21,15 @@ Sistema desenvolvido para:
 ## Bando de dados
 
 -- Criação da database
+
 CREATE DATABASE cda_teste;
 
 -- Uso da database
+
 USE cda_teste;
 
 -- Tabela emblems
+
 CREATE TABLE emblems (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     slug VARCHAR(255) NOT NULL,
@@ -36,6 +39,7 @@ CREATE TABLE emblems (
 );
 
 -- Tabela users
+
 CREATE TABLE users (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -44,6 +48,7 @@ CREATE TABLE users (
 );
 
 -- Tabela emblemsuser
+
 CREATE TABLE emblemsuser (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     user_id BIGINT NOT NULL,
@@ -55,6 +60,7 @@ CREATE TABLE emblemsuser (
 -- INSERTS
 
 -- Inserção de dados na tabela emblems
+
 INSERT INTO emblems (id, slug, name, image, category) VALUES
 (1, 'cda', 'Cidade Alta', 'https://cidadealtarp.com/imagens/challenge/cidade-alta.png', 'gold'),
 (2, 'cda-valley', 'Cidade Alta Valley', 'https://cidadealtarp.com/imagens/challenge/cidade-alta-valley.png', 'gold'),
